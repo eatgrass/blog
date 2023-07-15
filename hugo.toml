@@ -1,0 +1,11 @@
+baseURL = 'https://huangjing.me/'
+languageCode = 'zh-Hans'
+title = 'Huang Jing'
+theme = 'hugo-book'
+
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 1
