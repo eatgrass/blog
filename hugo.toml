@@ -3,9 +3,13 @@ languageCode = 'zh-Hans'
 title = 'Huang Jing'
 theme = 'hugo-book'
 
-[markup]
-[markup.goldmark.renderer]
-  unsafe = true
 
-[markup.tableOfContents]
-  startLevel = 1
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 1
