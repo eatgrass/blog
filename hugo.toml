@@ -14,5 +14,5 @@ theme = 'hugo-book'
   [markup.tableOfContents]
     startLevel = 1
 
-[params]
-  BookTheme = "dark"
+# [params]
+#   BookTheme = "dark"
