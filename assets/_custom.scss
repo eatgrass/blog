@@ -31,7 +31,7 @@
 
     // A sharp shadow (with no blur) really gives
     // the old school keyboard look
-    // box-shadow: 0 2px 0 1px var(--kbd-color-border);
+    box-shadow: 2px 3px 4px 0px var(--kbd-color-border);
 
     // Remove the text cursor — totally optional
     // but I wanted it for my hover effect
@@ -60,6 +60,5 @@
     // against the cap height of regular paragraph text.
     position: relative;
     top: -1px;
-
   }
 }
