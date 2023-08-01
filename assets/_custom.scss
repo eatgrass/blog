@@ -44,7 +44,7 @@
     font-size: 0.75em;
 
     // Remove any extra space so I can accurately tweak the padding
-    line-height: 1;
+    line-height: 1.2;
 
     // Make narrow numbers and letters look less odd
     min-width: 0.75rem;
@@ -59,6 +59,6 @@
     // bottom-heavy due to the `box-shadow`. This looks better
     // against the cap height of regular paragraph text.
     position: relative;
-    top: -1px;
+    top: -3px;
   }
 }
