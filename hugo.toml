@@ -13,3 +13,6 @@ theme = 'hugo-book'
       unsafe = true
   [markup.tableOfContents]
     startLevel = 1
+
+[params]
+  BookTheme = "dark"
