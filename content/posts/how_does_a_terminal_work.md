@@ -23,7 +23,7 @@ categories: Computer Science
 
 ## 终端模拟器
 
-我们今天称之为终端的软件，例如iTerm, Windows Terminal, Alacritty 甚至包括Tmux，严格意义上其实是终端模拟器，我们通过环境变量`$TERM`来控制这些软件所要模拟的终端，不同的终端所支持的能力不同，比如我们可能会把终端类型环境变量设成xterm-color256一类的值来支持色彩显示。
+我们今天称之为终端的软件，例如iTerm, Windows Terminal, Alacritty 甚至包括Tmux，某种意义上他们是终端模拟器，我们通过环境变量`$TERM`来控制这些软件所要模拟的终端，不同的终端所支持的能力不同，比如我们可能会把终端类型环境变量设成xterm-color256一类的值来支持色彩显示。
 
 终端模拟器又是如何实现对终端的模拟的呢？一般来说，模拟器会尽可能多的支持各种能力，而不是直接实现某种终端。对终端能力的抽象由系统的终端数据库来完成，不同的系统可能会使用
 {{% link href = "https://man7.org/linux/man-pages/man5/terminfo.5.html" text = "terminfo" %}}或者`termcap` 作为终端数据库。
