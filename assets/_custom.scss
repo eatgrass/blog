@@ -1,7 +1,9 @@
 .markdown {
-  .language-ascii-diagram {
-    display: block;
-    line-height: 1.2 !important;
+  pre {
+    code.language-plain {
+      display:inline-block;
+      line-height: 1.2 !important;
+    }
   }
 
   kbd {

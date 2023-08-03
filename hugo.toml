@@ -7,15 +7,32 @@ hasCJKLanguage = true
 
 
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
+[[markup]]
+  [[markup.goldmark]]
+    [[markup.goldmark.parser]]
+      [[markup.goldmark.parser.attribute]]
         block = true
-    [markup.goldmark.renderer]
+    [[markup.goldmark.renderer]]
       unsafe = true
-  [markup.tableOfContents]
+  [[markup.tableOfContents]]
     startLevel = 1
+
+
+[[menu.before]]
+  name = "Blog"
+  pageRef = '/posts'
+  weight = 1
+    
+[[menu.after]]
+  name = "Text Diagram Tool"
+  url = "https://text-diagram.huangjing.me"
+  weight = 1
+
+[[menu.after]]
+  name = "Github"
+  url = "https://github.com/eatgrass"
+  weight = 2
+
 
 # [params]
 #   BookTheme = "dark"
