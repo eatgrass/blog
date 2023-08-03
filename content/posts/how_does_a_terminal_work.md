@@ -5,7 +5,7 @@ tags: System
 categories: Computer Science
 ---
 
-终端(**Terminal**)，对于工程师来说算是常用工具， 但是我发现自己并不真正了解终端是如何工作的，而且在GUI做为主流交互方式的今天，这或许算是一个普遍现象，大家并不关心终端后面各种奇怪的配置是怎么回事，只要能帮我正常执行命令就好。 我甚至分不太清**Terminal**和**Shell**到底是什么关系，直到前些天在折腾nvim时碰到一些问题，才想起或许该好好了解一下相关的知识。最后不仅顺利解决了问题，之前一直模模糊糊的地方也清晰了。
+终端(**Terminal**)，对于工程师来说算是常用工具， 但是我发现自己并不真正了解终端是如何工作的，而且在GUI做为主流交互方式的今天，这或许算是一个普遍现象，大家并不关心终端后面各种奇怪的配置是怎么回事，只要能正常执行命令就好。直到前些天在折腾nvim时碰到一些问题，才想起或许该好好了解一下相关的知识。最后不仅顺利解决了问题，之前一直模模糊糊的地方也清晰了。
 
 ## 从Teleprinter说起
 
@@ -13,7 +13,7 @@ categories: Computer Science
 
 它还有另外一个名字更被人所熟知  **TTY**，打开系统的`/dev`目录，你会发现一些以tty开头的设备文件，每个文件代表着某个终端在通过`stdin`，`stdout`，`stderr`在于某个进程交互。曾经这些设备文件的另一端是一台真实的终端， 现在Teleprinter的肉身可能只存在于博物馆里了，但是tty这个名字则被沿用至今。
 
-另外一个有趣的地方是，我在初学编程时，看到`printf("Hello World\n")`，会有点纳闷，这个`print`多少看着有点奇怪，但在了解到当时的输出设备确实是台打字机的时候，那也就合理了。
+另外一个有趣的地方是，我在初学编程时，看到这个`printf("Hello World\n")`，多少觉着有点奇怪，但在了解到当时的输出设备确实是台打字机的时候，那也就合理了。
 
 ## Terminal
 
@@ -25,10 +25,10 @@ categories: Computer Science
 
 我们今天称之为终端的软件，例如iTerm, Windows Terminal, Alacritty 甚至包括Tmux，某种意义上他们是终端模拟器，我们通过环境变量`$TERM`来控制这些软件所要模拟的终端，不同的终端所支持的能力不同，比如我们可能会把终端类型环境变量设成xterm-color256一类的值来支持色彩显示。
 
-终端模拟器又是如何实现对终端的模拟的呢？一般来说，模拟器会尽可能多的支持各种能力，而不是直接实现某种终端。对终端能力的抽象由系统的终端数据库来完成，不同的系统可能会使用
+终端模拟器又是如何实现对终端的模拟呢？一般来说，模拟器会尽可能多的支持各种能力，而不是直接实现某种终端。对终端能力的抽象由系统的终端数据库来完成，不同的系统可能会使用
 {{% link href = "https://man7.org/linux/man-pages/man5/terminfo.5.html" text = "terminfo" %}}或者`termcap` 作为终端数据库。
 
-我在这里截取部分{{% link href = "https://www.commandlinux.com/man-page/man1/infocmp.1.html" text = "infocmp" %}}命令的输出。
+这里截取部分{{% link href = "https://www.commandlinux.com/man-page/man1/infocmp.1.html" text = "infocmp" %}}命令的输出。
 
 ```plaintext
     alacritty|alacritty terminal emulator,
@@ -74,8 +74,8 @@ categories: Computer Science
 那么SSH远程到主机的过程也就容易理解了
 
 1. 本地终端启动shell进程，与shell标准输入输出进行交互
-2. 在shell中使用ssh客户端连接到远端主机的ssh服务器时，会设置连接{{% link href = "https://www.openssh.com/txt/release-8.7" text = "TERM环境变量" %}}，需要使用的shell
-3. 远程shell将输出转为合适的终端字符序列，通过ssh发送给本地
+2. 在shell中使用ssh客户端连接到远端主机的ssh服务器时，会设置连接{{% link href = "https://www.openssh.com/txt/release-8.7" text = "TERM环境变量" %}}，远程主机上所使用的shell
+3. 远程shell的输出被转为合适的终端字符序列，发送回本地
 
 当连接到远程主机，想将光标左移时，我们在键盘上按下 {{% kbd key = "Left"%}}，终端会查找`key_left`所对应的字符序列，并将序列`<ESC>0D`发送给远程主机，本地终端在收到`<Ctrl>H`后，将光标完成左移。
 
