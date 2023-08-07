@@ -24,8 +24,8 @@ hasCJKLanguage = true
   weight = 1
     
 [[menu.after]]
-  name = "Text Diagram Tool"
-  url = "https://text-diagram.huangjing.me"
+  name = "Monoify"
+  url = "https://monoify.io"
   weight = 1
 
 [[menu.after]]
