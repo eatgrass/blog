@@ -8,7 +8,7 @@ tags:
 categories: Development
 ---
 
-[Monoify](https://monoify.io)是个文本绘图工具，这这篇用来记录一下这个自娱自乐项目的创造过程中的一些想法。
+[Monoify](https://monoify.io)是个文本绘图工具，这篇用来记录一下在做这个自娱自乐项目的过程中的一些想法。
 
 ## 动机
 
