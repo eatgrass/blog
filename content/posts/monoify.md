@@ -1,10 +1,9 @@
 ---
-date: 2023-07-30
+date: 2023-08-14
 title: Monoify - 一个文本绘图工具
 tags: 
 - Web
 - Typescript
-- Canvas
 categories: Development
 ---
 
