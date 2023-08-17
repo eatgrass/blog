@@ -1,6 +1,6 @@
 ---
 date: 2023-08-14
-title: Monoify - 一个文本绘图工具
+title: Monoify 一个文本绘图工具
 tags: 
 - Web
 - Typescript
@@ -15,15 +15,15 @@ categories: Development
 
 ## 技术选择
 
-定位是一个轻量级的工具，利用Web做前端基本没有什么太多可说的，Vue3相对较熟，Typescript是现学现卖，但我还是很庆幸选择使用Typescript的，这个待会再说。最不确定的一点就是我该用什么画图。虽然了解有[Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)，但是图形方面的编程从没做过，算是知识盲区。所以决定在两个方向上尝试调研最后做对比，一是学习了解原生的Canvas API, 一边去找现成的绘图工具库
+定位是一个轻量级的工具，利用Web做前端基本没有什么太多可说的，Vue3相对较熟，Typescript是现学现卖，但我还是很庆幸选择使用Typescript的，这个待会再说。最不确定的一点就是我该用什么画图。虽然了解有[Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)，但是图形方面的编程从没做过，算是知识盲区。所以决定在两个方向上尝试调研最后做对比，一是学习了解原生的Canvas API，一边去找现成的绘图工具库。
 
 ## Two.js
 
 最后在众多工具库与原生API里选择了[Two.js](https://two.js.org/), 先说原生API。
 
-[Path 2D](https://developer.mozilla.org/en-US/docs/Web/API/Path2D) 实际上可以满足开发需要，但是如果选择原生API，那意味着必须自己解决对画布上的图形和对象的映射和管理。缩放、拖动画布这类Transform操作可能会需要花更多的时间研究。如果已有的工具库也没有提供这类支持，那也只有硬着头皮写了, 但事实证明这些是一类比较通用的关注点。
+[Path 2D](https://developer.mozilla.org/en-US/docs/Web/API/Path2D) 实际上可以满足开发需要，但是如果选择原生API，那意味着必须自己解决对画布上的图形和对象的映射和管理。缩放、拖动画布这类Transform操作可能会需要花更多的时间研究。如果已有的工具库也没有提供这类支持，那也只有硬着头皮写了，但事实证明这些是一类比较通用的关注点。
 
-筛选工具库的过程跟自己实际需要相关, 我的考量主要在以下几点
+筛选工具库的过程跟自己实际需要相关，我的考量主要在以下几点
 * 能简化开发过程
 * 简单轻量, 提供 2D 图形绘制足矣，无需 3D, WebGL 渲染
 * 成熟稳定
