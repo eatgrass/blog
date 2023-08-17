@@ -1,13 +1,23 @@
-html {
-    font-size: 14px;
-    scroll-behavior: smooth;
-    touch-action: manipulation
+body {
+  font-family: Berkeley, monospace;
+}
+
+.book-toc {
+  font-size: 0.9rem;
 }
 
 .markdown {
+
+  line-height: 1.9;
+
+  a:hover {
+    border-bottom: 1px dashed;
+    text-decoration: none;
+  }
+
   pre {
     code.language-plain {
-      display:inline-block;
+      display: inline-block;
       line-height: 1.2 !important;
     }
   }
