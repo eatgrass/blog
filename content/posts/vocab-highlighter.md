@@ -1,6 +1,6 @@
 ---
 date: 2023-11-17
-title: Vocabulary Highter Plugin for Obsidian
+title: Obsidian单词高亮插件
 tags:
   - Obsidian
   - Typescript
