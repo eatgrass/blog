@@ -18,14 +18,14 @@ categories: Development
 - 分出来的每个词需要贴近字典的里词条的格式。
 - 空格和标点不能丢。
 
-所以我使用了 [Treebank](https://en.wikipedia.org/wiki/Treebank) 的分词方式。
+所以我使用了 Treebank[^1] 的分词方式。
 
 ## 词频和语料库
 
 美式英语主要参考了两个语料库。
 
-- COCA (Corpus of Contemporary American English) [^1]
-- ANC (American National Corpus) [^2]
+- COCA (Corpus of Contemporary American English) [^2]
+- ANC (American National Corpus) [^3]
 
 COCA 是目前最权威的美式英语语料库，更新也频繁，但是需要付费使用。
 ANC 语料收录与更新频次均不及 COCA, 胜在可以免费使用。
@@ -58,9 +58,10 @@ ANC 语料收录与更新频次均不及 COCA, 胜在可以免费使用。
 - 缓存高频词汇,可以显著减少对词典文件的查询。
 - DOM 元素批量更新,为整个段落创建 `DocumentFragment`, 将每个单词的 `span` 元素追加到 `DocumentFragment上`, 再替换原来的文本节点。
 - 重新组装 DOM 元素时选择尽量不要去改变原始文档的高度，这个涉及到浏览器 `Forced Reflow` 的话题，这个会带来相当大的性能影响。
-- Obsidian 的 Markdown 后处理（Post Processor）[^3]未提供类似 CodeMirror 中视口（View Port[^4]）更新的方式，否则部分更新会带来更好的性能体验。
+- Obsidian 的 Markdown 后处理（Post Processor）[^4]未提供类似 CodeMirror 中视口（View Port[^5]）更新的方式，否则部分更新会带来更好的性能体验。
 
-[^1]: English-Corpora: [COCA](https://www.english-corpora.org/coca/)
-[^2]: [Open American National Corpus](https://anc.org)
-[^3]: Obsidian Document [Markdown post processing](https://docs.obsidian.md/Plugins/Editor/Markdown+post+processing)
-[^4]: Obsidian Document [View Port](https://docs.obsidian.md/Plugins/Editor/Viewport)
+^1: [Treebank](https://en.wikipedia.org/wiki/Treebank)
+[^2]: English-Corpora: [COCA](https://www.english-corpora.org/coca/)
+[^3]: [Open American National Corpus](https://anc.org)
+[^4]: Obsidian Document [Markdown post processing](https://docs.obsidian.md/Plugins/Editor/Markdown+post+processing)
+[^5]: Obsidian Document [View Port](https://docs.obsidian.md/Plugins/Editor/Viewport)
