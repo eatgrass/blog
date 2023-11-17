@@ -1,6 +1,6 @@
 ---
 date: 2023-11-17
-title: Obsidian单词高亮插件
+title: Obsidian 单词高亮插件
 tags:
   - Obsidian
   - Typescript
