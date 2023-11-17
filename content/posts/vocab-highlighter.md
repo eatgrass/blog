@@ -1,9 +1,9 @@
 ---
 date: 2023-11-17
 title: Vocabulary Highter Plugin for Obsidian
-tags: 
-- Obsidian
-- Typescript
+tags:
+  - Obsidian
+  - Typescript
 categories: Development
 ---
 
@@ -32,9 +32,26 @@ ANC 语料收录与更新频次均不及 COCA, 胜在可以免费使用。
 
 所以选择了后者，在 Open ANC 的基础上做了按词频排序的词典，词典中大概收录了24万个英文词汇。
 
-## 文档高亮
+## DOM 更新
 
-对每个段落进行分词处理，查询词频再套上一层 `span`, 并更新 DOM, 并应用样式，最基本的高亮功能就完成了。
+我们目标是将阅读模式下的原始 DOM 进行更新，例如：
+
+```html
+<p>do cats eat bats?</p>
+```
+
+对文档中所有的文本进行分词处理，查询词频再套上一层 `span`。
+
+```html
+<p>
+  <span class="vocab-hl hl-1" data-rank="35">do</span>
+  <span class="vocab-hl hl-1" data-rank="2605">cats</span>
+  <span class="vocab-hl hl-1" data-rank="1144">eat</span>
+  <span class="vocab-hl hl-2" data-rank="11294">bats</span>
+</p>
+```
+
+更新 DOM 后, 并应用样式，最基本的高亮功能就完成了。将 rank 写入标签的 dataset 可以更方便的供后续更新 DOM。
 
 ## 性能
 
@@ -42,7 +59,6 @@ ANC 语料收录与更新频次均不及 COCA, 胜在可以免费使用。
 - DOM 元素批量更新,为整个段落创建 `DocumentFragment`, 将每个单词的 `span` 元素追加到 `DocumentFragment上`, 再替换原来的文本节点。
 - 重新组装 DOM 元素时选择尽量不要去改变原始文档的高度，这个涉及到浏览器 `Forced Reflow` 的话题，这个会带来相当大的性能影响。
 - Obsidian 的 Markdown 后处理（Post Processor）[^3]未提供类似 CodeMirror 中视口（View Port[^4]）更新的方式，否则部分更新会带来更好的性能体验。
-
 
 [^1]: English-Corpora: [COCA](https://www.english-corpora.org/coca/)
 [^2]: [Open American National Corpus](https://anc.org)
