@@ -42,4 +42,4 @@ Path 2D[^3] 实际上可以满足开发需要，但是如果选择原生API，�
 [^1]: MDN [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 [^2]: [two.js](https://two.js.org/)
 [^3]: MDN [Path 2D](https://developer.mozilla.org/en-US/docs/Web/API/Path2D)
-[^4]: two.js[0.8.11 Release](https://github.com/jonobr1/two.js/releases/tag/v0.8.11)
+[^4]: two.js [0.8.11 Release](https://github.com/jonobr1/two.js/releases/tag/v0.8.11)

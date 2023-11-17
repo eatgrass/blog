@@ -60,8 +60,8 @@ ANC 语料收录与更新频次均不及 COCA, 胜在可以免费使用。
 - 重新组装 DOM 元素时选择尽量不要去改变原始文档的高度，这个涉及到浏览器 `Forced Reflow` 的话题，这个会带来相当大的性能影响。
 - Obsidian 的 Markdown 后处理（Post Processor）[^4]未提供类似 CodeMirror 中视口（View Port[^5]）更新的方式，否则部分更新会带来更好的性能体验。
 
-^1: [Treebank](https://en.wikipedia.org/wiki/Treebank)
-[^2]: English-Corpora: [COCA](https://www.english-corpora.org/coca/)
+^1: Wiki [Treebank](https://en.wikipedia.org/wiki/Treebank)
+[^2]: English-Corpora [COCA](https://www.english-corpora.org/coca/)
 [^3]: [Open American National Corpus](https://anc.org)
 [^4]: Obsidian Document [Markdown post processing](https://docs.obsidian.md/Plugins/Editor/Markdown+post+processing)
 [^5]: Obsidian Document [View Port](https://docs.obsidian.md/Plugins/Editor/Viewport)
