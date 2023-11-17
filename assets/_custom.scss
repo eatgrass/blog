@@ -7,7 +7,6 @@ body {
 }
 
 .markdown {
-
   line-height: 1.9;
 
   blockquote {
@@ -83,5 +82,10 @@ body {
     // against the cap height of regular paragraph text.
     position: relative;
     top: -3px;
+  }
+
+  .footnotes {
+    line-height: 0.7;
+    font-size: 0.85rem;
   }
 }
