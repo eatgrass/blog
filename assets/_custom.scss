@@ -10,6 +10,11 @@ body {
 
   line-height: 1.9;
 
+  blockquote {
+    color: #777;
+    font-style: italic;
+  }
+
   a:hover {
     border-bottom: 1px dashed;
     text-decoration: none;
