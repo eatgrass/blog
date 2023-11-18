@@ -28,7 +28,7 @@ categories: Development
 - ANC (American National Corpus) [^3]
 
 COCA 是目前最权威的美式英语语料库，更新也频繁，但是需要付费使用。
-ANC 语料收录与更新频次均不及 COCA, 胜在可以免费使用。
+ANC 语料收录与更新频次均不及 COCA， 胜在可以免费使用。
 
 所以选择了后者，在 Open ANC 的基础上做了按词频排序的词典，词典中大概收录了 24 万个英文词汇。
 
@@ -51,16 +51,16 @@ ANC 语料收录与更新频次均不及 COCA, 胜在可以免费使用。
 </p>
 ```
 
-更新 DOM 后, 并应用样式，最基本的高亮功能就完成了。将 rank 写入标签的 dataset 可以更方便的供后续更新 DOM。
+更新 DOM 后， 并应用样式，最基本的高亮功能就完成了。将 rank 写入标签的 dataset 可以更方便的供后续更新 DOM。
 
 ## 性能
 
-- 缓存高频词汇,可以显著减少对词典文件的查询。
-- DOM 元素批量更新,为整个段落创建 `DocumentFragment`, 将每个单词的 `span` 元素追加到 `DocumentFragment上`, 再替换原来的文本节点。
+- 缓存高频词汇，可以显著减少对词典文件的查询。
+- DOM 元素批量更新，为整个段落创建 `DocumentFragment`，将每个单词的 `span` 元素追加到 `DocumentFragment上`，再替换原来的文本节点。
 - 重新组装 DOM 元素时选择尽量不要去改变原始文档的高度，这个涉及到浏览器 `Forced Reflow` 的话题，这个会带来相当大的性能影响。
 - Obsidian 的 Markdown 后处理（Post Processor）[^4]未提供类似 CodeMirror 中视口（View Port[^5]）更新的方式，否则部分更新会带来更好的性能体验。
 
-^1: Wiki [Treebank](https://en.wikipedia.org/wiki/Treebank)
+[^1]: Wiki [Treebank](https://en.wikipedia.org/wiki/Treebank)
 [^2]: English-Corpora [COCA](https://www.english-corpora.org/coca/)
 [^3]: [Open American National Corpus](https://anc.org)
 [^4]: Obsidian Document [Markdown post processing](https://docs.obsidian.md/Plugins/Editor/Markdown+post+processing)
