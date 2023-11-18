@@ -26,6 +26,10 @@ body {
     }
   }
 
+  code {
+    background-color: var(--gray-200)
+  }
+
   kbd {
     --kbd-color-background: var(--body-background);
     // These interpolated variables reference a SCSS map of HSL-based greys
