@@ -21,23 +21,19 @@ categories: Internet
 
 ### 浏览器
 
-```plain
 | Runtime | Engine      |
 | ------- | ----------- |
 | Chrome  | V8          |
 | Edge    | V8          |
 | Firefox | SpiderMoney |
 | Safari  | Nitro       |
-```
 
 ### 非浏览器
 
-```plain
 | Runtime | Engine      |
 | ------- | ----------- |
 | Node    | V8          |
 | Deno    | V8          |
-```
 
 ## 社区和基础设施
 
