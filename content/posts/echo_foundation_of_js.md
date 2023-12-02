@@ -7,13 +7,13 @@ tags:
 categories: Internet
 ---
 
-# W3C
-
-制定 Web 标准。
-
 # ECMA
 
 制定 Javascript 语言标准
+
+# W3C
+
+制定 Web 标准。
 
 # Javascript 引擎与运行时
 
@@ -25,7 +25,6 @@ categories: Internet
 | Edge    | V8          |
 | Firefox | SpiderMoney |
 | Safari  | Nitro       |
-
 
 ## 非浏览器
 
