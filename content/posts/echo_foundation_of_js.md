@@ -1,6 +1,6 @@
 ---
 date: 2023-12-02
-title: Javascript 的重要生态基础
+title: Javascript 的生态基础
 tags:
   - Web
   - JavaScript
