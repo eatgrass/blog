@@ -21,21 +21,25 @@ categories: Internet
 
 ### 浏览器
 
-| 运行时  | 引擎        |
+```plain
+| Runtime | Engine      |
 | ------- | ----------- |
 | Chrome  | V8          |
 | Edge    | V8          |
 | Firefox | SpiderMoney |
 | Safari  | Nitro       |
+```
 
 ### 非浏览器
 
-| 运行时 | 引擎 |
-| ------ | ---- |
-| Node   | V8   |
-| Deno   | V8   |
+```plain
+| Runtime | Engine      |
+| ------- | ----------- |
+| Node    | V8          |
+| Deno    | V8          |
+```
 
-## 社区基础设施
+## 社区和基础设施
 
 - NPM
 - Github
