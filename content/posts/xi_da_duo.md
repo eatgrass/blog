@@ -1,5 +1,6 @@
 ---
 title: 悉达多
+date: 2025-10-02
 categories: 读书
 tags:
     - 哲学
