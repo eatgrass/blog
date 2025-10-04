@@ -28,5 +28,10 @@ hasCJKLanguage = true
   pageRef = '/categories/随笔/'
   weight = 2
 
+[[menu.after]]
+  name = 'Email'
+  url = 'mailto:eatgrass21@gmail.com'
+  weight = 10
+
 # [params]
 #   BookTheme = "dark"
