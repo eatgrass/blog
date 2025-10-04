@@ -6,7 +6,7 @@ tags:
     - 交易
 ---
 
-![25年10月3日 横沙](https://static.huangjing.me/blog/251003.jpg)
+{{< image src="https://static.huangjing.me/blog/251003.jpg" alt="25-10-03 横沙" title="25-10-03 横沙" loading="eager" >}}
 
 将每一笔交易当做一次禅修，感受市场的呼吸起伏。
 
@@ -20,5 +20,8 @@ tags:
 
 唯观当下，去觉知、面对市场实相，无喜无悲。
 
+---
+
+_2025年10月3日 横沙_
 
 

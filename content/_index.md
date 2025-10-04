@@ -1,3 +1,4 @@
 ---
-layout: posts/list
+type: posts
+layout: list
 ---

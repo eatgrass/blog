@@ -1,7 +1,7 @@
 googleAnalytics = "G-SDD1PJ939R"
 baseURL = 'https://huangjing.me/'
 languageCode = 'zh-Hans'
-title = 'Huang Jing'
+title = 'Dust'
 theme = 'hugo-book'
 hasCJKLanguage = true
 
