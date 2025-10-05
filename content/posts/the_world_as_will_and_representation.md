@@ -1,5 +1,5 @@
 ---
-title: 作为意志和表现的世界
+title: 作为意志和表象的世界
 categories: 读书
 date: 2025-10-05
 tags:
