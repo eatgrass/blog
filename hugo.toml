@@ -4,6 +4,7 @@ languageCode = 'zh-Hans'
 title = 'Dust'
 theme = 'hugo-book'
 hasCJKLanguage = true
+copyright = '@ 2025 [Huang Jing](mailto:eatgrass21@gmail.com), All rights reserved'
 
 
 
