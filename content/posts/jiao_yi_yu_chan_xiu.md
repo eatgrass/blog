@@ -1,12 +1,12 @@
 ---
 title: 交易与禅修
-date: '2025-10-03'
+date: '2025-10-02'
 categories: 随笔
 tags:
     - 交易
 ---
 
-{{< image src="https://static.huangjing.me/blog/251003.jpg" alt="25-10-03 横沙" title="25-10-03 横沙" loading="eager" >}}
+{{< image src="https://static.huangjing.me/blog/251003.jpg" alt="25-10-02 横沙" title="25-10-03 横沙" loading="eager" >}}
 
 将每一笔交易当做一次禅修，感受市场的呼吸起伏。
 
@@ -22,6 +22,6 @@ tags:
 
 ---
 
-_2025年10月3日 横沙_
+_2025年10月2日 横沙_
 
 
