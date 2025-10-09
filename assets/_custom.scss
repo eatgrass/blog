@@ -1,5 +1,5 @@
 body {
-  font-family: Berkeley, monospace;
+  font-family: Berkeley;
 }
 
 .book-toc {
@@ -9,10 +9,10 @@ body {
 .markdown {
   line-height: 1.9;
 
-  blockquote {
-    color: #777;
-    font-style: italic;
-  }
+  // blockquote {
+  //   color: #777;
+  //   font-style: italic;
+  // }
 
   a[href]:hover {
     border-bottom: 1px dashed;
