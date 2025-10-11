@@ -6,9 +6,16 @@ tags:
     - 交易
 ---
 
-{{< image src="https://static.huangjing.me/blog/passed-ftmo-challenge.jpeg" alt="FTMO chanllenge passed" title="FTMO chanllenge passed"  >}}
+终于完成了 FTMO 的两阶段考试。
+结果上来说虽然通过了，但我觉得自己做得并不好，过程中我并没有完全遵守交易原则。
+新的开始继续改进。
 
 
-{{< image src="https://static.huangjing.me/blog/passed-verification.jpeg" alt="FTMO verification passed" title="FTMO verification passed"  >}}
+{{% columns %}}
+- ### FTMO Challenge
+  {{< image src="https://static.huangjing.me/blog/passed-ftmo-challenge.jpeg" alt="FTMO chanllenge passed" title="FTMO chanllenge passed"  >}}
 
-结果上来说虽然通过了考试，但我觉得自己做得并不好，过程中我并没有完全遵守交易原则。新的开始继续改进。
+- ### FTMO Verification
+  {{< image src="https://static.huangjing.me/blog/passed-verification.jpeg" alt="FTMO verification passed" title="FTMO verification passed" >}}
+
+{{% /columns %}}
