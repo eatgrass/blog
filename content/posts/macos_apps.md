@@ -1,5 +1,5 @@
 ---
-title: MacOS Apps 清单
+title: 'MacOS Apps 清单'
 categories: 系统
 date: '2026-04-11'
 tags:
